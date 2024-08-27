@@ -9,7 +9,7 @@
 <body>
     <div class="input-box">
         <input type="password" placeholder="password" id="password">
-        <img id="imgicon" src="/assets/close.png" alt="">
+        <img id="imgicon" src="./assets/close.png" alt="">
     </div>
 
     <script>
@@ -19,10 +19,10 @@
         imgicon.addEventListener('click',()=>{
             if(password.type=="password"){
                 password.type="text"
-                imgicon.src="/assets/pngwing.com.png"
+                imgicon.src="./assets/pngwing.com.png"
             }else{
                 password.type="password"
-                imgicon.src="/assets/close.png"
+                imgicon.src="./assets/close.png"
             }
         })
     </script>
