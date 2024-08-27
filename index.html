@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show and Hide Password</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="input-box">
+        <input type="password" placeholder="password" id="password">
+        <img id="imgicon" src="/assets/close.png" alt="">
+    </div>
+
+    <script>
+        const password = document.getElementById('password')
+        const imgicon = document.getElementById('imgicon')
+
+        imgicon.addEventListener('click',()=>{
+            if(password.type=="password"){
+                password.type="text"
+                imgicon.src="/assets/pngwing.com.png"
+            }else{
+                password.type="password"
+                imgicon.src="/assets/close.png"
+            }
+        })
+    </script>
+</body>
+</html>
